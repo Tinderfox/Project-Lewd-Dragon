@@ -1,0 +1,19 @@
+AnimationName_Character_RoleID_Layer_FrameCount_FrameSpeed_LoopCount.png
+
+Animation Name
+	Unique name of the animated bit. Ex: "Oral01", "Closeup03", etc.
+Character
+	To which character the frame "belongs" to. A "Fire Dragon"'s cock may have be drawn differently from the one belonging to an "Ice Dragon"
+	BG represents the Background
+Character's Role ID
+	Can be seen as the "role" of the character in the scene.
+	Usually 01 represents the Top and 02 represents the Bottom, although more characters can be involved too.
+	If the Character is "BG", this will be 00
+Layer
+	Order in which the pieces of the animation should be drawn in the screen. Larger ones are printed on top of smaller ones.
+Frame Count
+	How many frames this spritesheet has, always horizontally.
+Frame Speed
+	Delay in milisecs of each frame of the animation
+Loop Count
+	How many times the animation should loop
