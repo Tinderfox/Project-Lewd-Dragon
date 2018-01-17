@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>esSolo</name>
+    <events>
+        <variable constant="0" name="FillHeight" sid="316557384641030" static="0" type="number">936</variable>
+        <variable constant="0" name="PercentProgress" sid="920622135590844" static="0" type="number">0</variable>
+        <event-block sid="862580404086381">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="471445069886226" type="System" />
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="976067259786982" type="Fill">
+                    <param id="0" name="Height">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="951978515207748">
+            <conditions>
+                <condition id="0" name="On function" sid="918393211776166" type="Function">
+                    <param id="0" name="Name">&quot;SetFill&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="350072136278357" type="Fill">
+                    <param id="0" name="Height">0.01*PercentProgress*FillHeight</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="688375203835065">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="119655717481342" type="Touch">
+                    <param id="0" name="Object">Hotspot</param>
+                </condition>
+                <condition id="7" name="Compare touch speed" sid="175756873678774" type="Touch">
+                    <param id="0" name="Touch index">0</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Speed">20</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="930330090400061" type="System">
+                    <param id="0" name="Variable">PercentProgress</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="342567228503051" type="System">
+                    <param id="0" name="Variable">PercentProgress</param>
+                    <param id="1" name="Value">0.0005*touch.SpeedForID(0)</param>
+                </action>
+                <action id="0" name="Call function" sid="820840154808600" type="Function">
+                    <param id="0" name="Name">&quot;SetFill&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="902096863576721">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="632242184043224" type="System">
+                            <param id="0" name="Variable">PercentProgress</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="341477440107530" type="System">
+                            <param id="0" name="Variable">PercentProgress</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="0" name="Call function" sid="608498351605816" type="Function">
+                            <param id="0" name="Name">&quot;SetFill&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action behavior="Sine" id="0" name="Set active" sid="635628908106226" type="Fill">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="354763880082177">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="588816820255009" type="System">
+                    <param id="0" name="Variable">PercentProgress</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">100</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set effect parameter" sid="104227209338576" type="Fill">
+                    <param id="0" name="Effect">&quot;Brightness&quot;</param>
+                    <param id="1" name="Parameter index">0</param>
+                    <param id="2" name="Value">fill.sine.magnitude+Fill.Sine.Value+100</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

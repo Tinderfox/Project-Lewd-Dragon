@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>esDirector</name>
+    <events>
+        <variable constant="0" name="debug" sid="771759149566913" static="0" type="text"></variable>
+        <event-block sid="165099251060023">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="171616723816180" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="697811910263744" type="Scene" />
+            </actions>
+            <sub-events>
+                <event-block sid="935552013961454">
+                    <conditions />
+                    <actions>
+                        <action id="-3" name="Create object" sid="243344222989160" type="System">
+                            <param id="0" name="Object to create">Scene</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="744077372246666">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="706373827779433" type="System">
+                                    <param id="0" name="Count">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Push" sid="119505089187877" type="Scene">
+                                    <param id="0" name="Where">1</param>
+                                    <param id="1" name="Value">Clip.animationList.animationName(loopindex)</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="712626368943687">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="461579742599443" type="System">
+                                            <param id="0" name="Name">&quot;&quot;</param>
+                                            <param id="1" name="Start index">1</param>
+                                            <param id="2" name="End index">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="3" name="Set at XY" sid="763114334739765" type="Scene">
+                                            <param id="0" name="X">0</param>
+                                            <param id="1" name="Y">loopindex</param>
+                                            <param id="2" name="Value">tokenat(Scene.At(0,0), loopindex, &quot;_&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="569726439151652">
+                    <conditions />
+                    <actions>
+                        <action id="-3" name="Create object" sid="822030156945703" type="System">
+                            <param id="0" name="Object to create">Scene</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="989111507374385">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="124185186375247" type="System">
+                                    <param id="0" name="Count">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Push" sid="933098239305899" type="Scene">
+                                    <param id="0" name="Where">1</param>
+                                    <param id="1" name="Value">Clip.animationList.animationName(loopindex+3)</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="662889454314634">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="238228574124582" type="System">
+                                            <param id="0" name="Name">&quot;&quot;</param>
+                                            <param id="1" name="Start index">1</param>
+                                            <param id="2" name="End index">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="3" name="Set at XY" sid="358438169531170" type="Scene">
+                                            <param id="0" name="X">0</param>
+                                            <param id="1" name="Y">loopindex</param>
+                                            <param id="2" name="Value">tokenat(Scene.At(0,0), loopindex, &quot;_&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="468552404790106">
+                    <conditions />
+                    <actions>
+                        <action id="-3" name="Create object" sid="861771073177804" type="System">
+                            <param id="0" name="Object to create">Scene</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="490072379294145">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="213561982178273" type="System">
+                                    <param id="0" name="Count">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Push" sid="845955304963486" type="Scene">
+                                    <param id="0" name="Where">1</param>
+                                    <param id="1" name="Value">Clip.animationList.animationName(loopindex+5)</param>
+                                    <param id="2" name="Axis">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="212056271013656">
+                                    <conditions>
+                                        <condition id="-10" name="For" sid="385659167602017" type="System">
+                                            <param id="0" name="Name">&quot;&quot;</param>
+                                            <param id="1" name="Start index">1</param>
+                                            <param id="2" name="End index">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="3" name="Set at XY" sid="281610801206697" type="Scene">
+                                            <param id="0" name="X">0</param>
+                                            <param id="1" name="Y">loopindex</param>
+                                            <param id="2" name="Value">tokenat(Scene.At(0,0), loopindex, &quot;_&quot;)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="284157743469503">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="155566198847967" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="953172698542172" type="Function">
+                            <param id="0" name="Name">&quot;PlayNextScene&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="781273298146713">
+            <conditions>
+                <condition id="0" name="On function" sid="450051979028988" type="Function">
+                    <param id="0" name="Name">&quot;PlayClip&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="685199143547488" type="System">
+                    <param id="0" name="Object to create">Clip</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">500</param>
+                    <param id="3" name="Y">500</param>
+                </action>
+                <action id="-9" name="Set value" sid="370032916708621" type="System">
+                    <param id="0" name="Variable">debug</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="279482005472922" type="Clip">
+                    <param id="0" name="Instance variable">LoopCount</param>
+                    <param id="1" name="Value">Function.Param(6)</param>
+                </action>
+                <action id="4" name="Set animation" sid="796312285997861" type="Clip">
+                    <param id="0" name="Animation">Function.Param(0)</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="408962321033138" type="Clip">
+                    <param id="0" name="Instance variable">Z</param>
+                    <param id="1" name="Value">Function.Param(3)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="412981635299795">
+            <conditions>
+                <condition id="5" name="On any finished" sid="513317305944955" type="Clip" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="135959285079717">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="687926181697046" type="Clip">
+                            <param id="0" name="Instance variable">LoopCount</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Start" sid="324911135802331" type="Clip">
+                            <param id="0" name="From">1</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="654173011843099" type="Clip">
+                            <param id="0" name="Instance variable">LoopCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="714878695299890">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="347412527379002" type="Clip">
+                    <param id="0" name="Instance variable">LoopCount</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="487161498252632" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="749563348770144" type="Function">
+                    <param id="0" name="Name">&quot;PlayNextScene&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="247340336745577">
+            <conditions>
+                <condition id="0" name="On function" sid="170027662336515" type="Function">
+                    <param id="0" name="Name">&quot;PlayNextScene&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="601412931644341" type="Clip" />
+            </actions>
+            <sub-events>
+                <event-block sid="753029401518544">
+                    <conditions>
+                        <condition id="-13" name="Pick nth instance" sid="431080629844328" type="System">
+                            <param id="0" name="Object">Scene</param>
+                            <param id="1" name="Instance">0</param>
+                        </condition>
+                        <condition id="3" name="For each element" sid="458104951308435" type="Scene">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="426461321878371" type="Function">
+                            <param id="0" name="Name">&quot;PlayClip&quot;</param>
+                            <param id="1" name="Parameter {n}">Scene.At(Scene.CurX, 0){###}Scene.At(Scene.CurX, 1){###}Scene.At(Scene.CurX, 2){###}Scene.At(Scene.CurX, 3){###}Scene.At(Scene.CurX, 4){###}Scene.At(Scene.CurX, 5){###}Scene.At(Scene.CurX, 6)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="283541066296525">
+                    <conditions>
+                        <condition id="-13" name="Pick nth instance" sid="892596525834033" type="System">
+                            <param id="0" name="Object">Scene</param>
+                            <param id="1" name="Instance">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="617669507665006" type="Scene" />
+                        <action id="-16" name="Wait" sid="452461939056936" type="System">
+                            <param id="0" name="Seconds">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="707848021238617" type="Function">
+                            <param id="0" name="Name">&quot;OrderZ&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="724431464016594">
+            <conditions>
+                <condition id="0" name="On function" sid="459586415450423" type="Function">
+                    <param id="0" name="Name">&quot;OrderZ&quot;</param>
+                </condition>
+                <condition id="-24" name="For Each (ordered)" sid="248191462209782" type="System">
+                    <param id="0" name="Object">Clip</param>
+                    <param id="1" name="Expression">Clip.Z</param>
+                    <param id="2" name="Order">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-24" name="Move to top" sid="726874197268477" type="Clip" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
